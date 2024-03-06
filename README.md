@@ -1,6 +1,8 @@
 # easy-powershell-battery-health-check
 Powershell command to report usable remaining battery life
 
+Simply press Windows Key + R > type powershell > press enter > Paste the next few lines in and press enter.
+
 
 $DesignedCapacity = (Get-WmiObject -Class “BatteryStaticData” -Namespace “ROOT\WMI”).DesignedCapacity
 $FullChargedCapacity = (Get-WmiObject -Class “BatteryFullChargedCapacity” -Namespace “ROOT\WMI”).FullChargedCapacity
